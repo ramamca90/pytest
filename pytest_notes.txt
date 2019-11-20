@@ -1,0 +1,49 @@
+What is Unit Testing - According to wikipedia, unit testing is a software testing method by which individual units of source code are tested to determine whether they are fit for use. 
+
+Why Unit Test? - 
+Tests Reduce Bugs in New Features and Existing Features
+Tests Are Good Documentation
+Tests Reduce the Cost of Change
+Faster Debugging
+Faster Development
+Better Design
+
+Python Testing frameworks
+unittest - In the Python Standard Library
+nose - Not in the Standard Library. Simpler tests than unittest
+pytest - Not in the Python Standard Library.
+
+run with following command:
+pytest test_math_func.py -v
+or
+py.test
+
+py.test is an alternative, more Pythonic way of writing your tests. 
+The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries.
+pytest is a mature full-featured Python testing tool that helps you write better programs. Learn Pytest basic functionality | Setup & Tear Down | Fixtures
+Beginning with a brief introduction and setup of Pytest. We will see How to install pytest, Using Options with Pytest, Parameterizing tests (pytest.mark.parametrize), pytest fixtures + setup/teardown methods, Using PyCharm to run pytest tests.
+
+The best part is, the overhead for creating unit tests is close to zero!
+How to use  Options with pytest: 
+How to run cases? 
+• pytest tests/test_mod.py
+• pytest tests/ 
+• pytest -v - enable complete verbose
+• pytest -k match # def test_match():  
+-k EXPRESSION  only run tests which match the given substring expression. 
+• pytest --showlocals # trace context 
+• pytest -x # stop on ﬁrst failure case 
+• pytest --maxfail=2 # on the second 
+• pytest -s # enable `print` output 
+• pytest --durations=5 # list top 5 slowest cases
+• pytest --tb=long # default traceback 
+• pytest --tb=line # oneline 
+• pytest --tb=short 
+• pytest --tb=native # Python default traceback
+-m MARKEXPR only run tests matching given mark expression.
+example: -m 'mark1 and not mark2'.
+  --markers  show markers (builtin, plugin and per-project ones).
+  -x, --exitfirst exit instantly on first error or failed test.
+  --maxfail=num exit after first num failures or errors.
+
+
