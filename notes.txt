@@ -1,0 +1,18 @@
+Setup procedure:
+•	Download anaconda from s/w hub , by default it comes with python2
+•	Create virtual environment for our production version python3.7.4
+•	I was facing some pytest issues with python3.7.3, so created virtual environment for python3.8.0
+•	Internally we have 2 major dependencies in our code
+	srx_py_common
+	opencensus
+get these 2 from 32514 from below paths and copy into your virtual environment sitepackages directory  ex: C:\Anaconda2\envs\python3.8.0\Lib\site-packages
+
+                 
+•	install below packages in virtual environment
+pytest, mock, psutils,  pytest-asyncio, requests, pytest-cov, pytest-instafail, pytest-html
+•	checkout our code in to local repo and direct to home directory rx-workflow-sync in cmd
+•	and finally run below command
+pytest --cov=src/scripts tests/ -v --junitxml="result.xml" --cov-report xml --cov-report html --html="results/index.html" –vv
+
+it will generate coverage report at htmlcov/index.html and results results /index.html in home path rx-workflow-sync 
+and we can see all test cases results with fail or pass status on screen, if you we want to see print statements in pytest add –s option in above command.
