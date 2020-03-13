@@ -24,7 +24,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 pytest, mock, psutils,  pytest-asyncio, requests, pytest-cov, pytest-instafail, pytest-html
 •	checkout our code in to local repo and direct to home directory rx-workflow-sync in cmd
 •	and finally run below command
-pytest --cov=src/scripts tests/ -v --junitxml="result.xml" --cov-report xml --cov-report html --html="results/index.html" –vv
+pytest --cov=src/scripts tests/ -v --junitxml="result.xml" --cov-report xml --cov-report html --html="results/index.html" -vv
 
 it will generate coverage report at htmlcov/index.html and results results /index.html in home path rx-workflow-sync 
 and we can see all test cases results with fail or pass status on screen, 
