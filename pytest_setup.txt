@@ -21,7 +21,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
                
 •	install below packages in virtual environment
-pytest, mock, psutils,  pytest-asyncio, requests, pytest-cov, pytest-instafail, pytest-html
+pytest, mock, psutils,  pytest-asyncio, requests, pytest-cov, pytest-instafail, pytest-html,dateutil, tzlocal, python_dateutil
 •	checkout our code in to local repo and direct to home directory rx-workflow-sync in cmd
 •	and finally run below command
 pytest --cov=src/scripts tests/ -v --junitxml="result.xml" --cov-report xml --cov-report html --html="results/index.html" -vv
